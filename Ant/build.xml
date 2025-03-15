@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<project name="Hello World Project" default="runPythonScript">
+   
+   <!-- Target para mostrar un mensaje de bienvenida -->
+   <target name="info">
+      <echo>Hello World - Welcome to Apache Ant!</echo>
+   </target>
+
+   <!-- Target para ejecutar el script Python con argumentos -->
+   <target name="runPythonScript">
+      <!-- Llamada al script Python, pasando argumentos -->
+      <exec executable="python">
+         <arg value="main.py"/>
+         <arg value="5"/> <!-- Ejemplo de cantidad de códigos -->
+      </exec>
+   </target>
+
+</project>
